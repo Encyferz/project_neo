@@ -100,14 +100,25 @@ class LoginPageState extends State<LoginPage>{
                             textColor: Colors.white,
                             child: new Text("Login"),
                             onPressed: () => {},
-                          )
+                          ),
+                          new Padding(
+                            padding: const EdgeInsets.only(
+                                top: 20.0
+                            ),
+                          ),
+                          new MaterialButton(
+                            color: Colors.teal,
+                            textColor: Colors.white,
+                            child: new Text("Register"),
+                            onPressed: () => {},
+                          ),
                         ],
                       ),
                     ),
                   ),
-              )
+              ),
             ],
-          )
+          ),
         ],
       ),
     );
