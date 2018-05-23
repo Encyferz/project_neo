@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
-void main() => runApp(new MyApp());
+void main() => runApp(new ProjectNeo());
 
-class MyApp extends StatelessWidget {
+class ProjectNeo extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return new MaterialApp(
