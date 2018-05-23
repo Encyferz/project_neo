@@ -167,8 +167,7 @@ class LoginPageState extends State<LoginPage> {
                             Navigator.push(
                                 context,
                                 new MaterialPageRoute(
-                                    builder: (context) =>
-                                    new HomePage()));
+                                    builder: (context) => new HomePage()));
                           },
                         ),
                         new Padding(
