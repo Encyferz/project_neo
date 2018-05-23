@@ -163,7 +163,13 @@ class LoginPageState extends State<LoginPage> {
                           color: Colors.teal,
                           textColor: Colors.white,
                           child: new Text("Login"),
-                          onPressed: () => {},
+                          onPressed: () {
+                            Navigator.push(
+                                context,
+                                new MaterialPageRoute(
+                                    builder: (context) =>
+                                    new HomePage()));
+                          },
                         ),
                         new Padding(
                           padding: const EdgeInsets.only(top: 20.0),
@@ -187,6 +193,41 @@ class LoginPageState extends State<LoginPage> {
             ],
           ),
         ],
+      ),
+    );
+  }
+}
+
+class HomePage extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return new Scaffold(
+      appBar: new AppBar(title: new Text("Project Neo")),
+      body: new Center(child: new Text('Page Data')),
+      drawer: new Drawer(
+        child: new ListView(
+          padding: EdgeInsets.zero,
+          children: <Widget>[
+            new DrawerHeader(
+              child: new Text('Header'),
+              decoration: new BoxDecoration(
+                color: Colors.blue,
+              ),
+            ),
+            new ListTile(
+              title: new Text('Data Item'),
+              onTap: () {
+                Navigator.pop(context);
+              },
+            ),
+            new ListTile(
+              title: new Text('Data Item'),
+              onTap: () {
+                Navigator.pop(context);
+              },
+            ),
+          ],
+        ),
       ),
     );
   }
